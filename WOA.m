@@ -60,7 +60,7 @@ allocated_bandwidth = best_whale .* bandwidth';
 output_string = sprintf('Allocated bandwidth: %s\n', mat2str(allocated_bandwidth));
 disp(output_string);
 
-bar(allocated_bandwidth)
+plot(allocated_bandwidth)
 xlabel('Node')
 ylabel('Allocated Bandwidth')
 title('Allocated Bandwidth per Node and Channel')
